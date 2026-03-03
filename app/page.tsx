@@ -258,7 +258,7 @@ const toolingPractices: Practice[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Jhonmar Bernardo | Full-Stack Developer",
+  title: "Jhonmar Bernardo | Full-Stack Web Developer",
   description:
     "Portfolio of Jhonmar Bernardo, focused on shipping reliable and polished web products.",
 };
@@ -300,13 +300,13 @@ export default async function Home() {
       </div>
 
       {/* Header */}
-      <header className="sticky top-4 z-50 mx-auto mt-4 w-[min(1100px,92%)] rounded-full border border-white/70 bg-white/75 px-6 py-3 backdrop-blur-xl shadow-[0_10px_40px_rgba(15,23,42,0.08)]">
+      <header className="sticky top-3 z-50 mx-auto mt-4 w-[min(1120px,92%)] rounded-2xl border border-white/70 bg-white/80 px-4 py-3 backdrop-blur-xl shadow-[0_10px_40px_rgba(15,23,42,0.08)] md:top-4 md:rounded-full md:px-6">
         <div className="flex items-center justify-between">
           <a href="#home" className="font-black tracking-tight text-slate-900 text-xl">
             JB.
           </a>
 
-          <nav className="hidden gap-4 text-xs font-semibold text-slate-600 md:flex lg:gap-7 lg:text-sm">
+          <nav className="hidden gap-4 text-xs font-semibold tracking-wide text-slate-600 md:flex lg:gap-7 lg:text-sm">
             <a href="#about" className="hover:text-slate-900 transition">
               About
             </a>
@@ -353,7 +353,7 @@ export default async function Home() {
         </div>
       </header>
 
-      <main id="home" className="mx-auto w-[min(1100px,92%)] pb-20 pt-20">
+      <main id="home" className="mx-auto w-[min(1120px,92%)] pb-20 pt-16 md:pt-20">
         {/* Hero */}
         <section className="reveal-up grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
           <div>
@@ -362,10 +362,10 @@ export default async function Home() {
               Available for new projects
             </div>
 
-            <h1 className="max-w-4xl text-balance text-5xl font-black leading-[1.03] tracking-[-0.03em] text-slate-900 md:text-7xl">
+            <h1 className="max-w-4xl text-balance text-4xl font-black leading-[1.03] tracking-[-0.03em] text-slate-900 sm:text-5xl md:text-7xl">
               Jhonmar Bernardo
               <span className="block bg-gradient-to-r from-sky-600 via-cyan-600 to-teal-600 bg-clip-text text-transparent">
-                Full-Stack Engineer
+                Full-Stack Web Developer
               </span>
             </h1>
 
@@ -378,11 +378,10 @@ export default async function Home() {
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-7 py-4 text-sm font-bold !text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2"
-                style={{ color: "#ffffff" }}
+                className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-7 py-4 text-sm font-bold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2"
               >
-                <span className="!text-white">View Projects</span>
-                <ArrowUpRight size={16} className="!text-white" />
+                <span>View Projects</span>
+                <ArrowUpRight size={16} />
               </a>
               <a
                 href="#contact"
@@ -442,7 +441,7 @@ export default async function Home() {
               <Sparkles size={14} className="text-sky-600" />
               About / Story
             </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">What I Build and Why</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">What I Build and Why</h2>
 
             <div className="mt-6 space-y-3 text-base leading-relaxed text-slate-600">
               {storyPoints.map((point) => (
@@ -470,7 +469,7 @@ export default async function Home() {
               <ShieldCheck size={14} className="text-sky-600" />
               My Expertise
             </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
               What I Bring to Engineering Teams
             </h2>
             <p className="mt-3 max-w-2xl text-sm text-slate-600">
@@ -484,7 +483,7 @@ export default async function Home() {
               return (
                 <article
                   key={item.title}
-                  className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)]"
+                  className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)]"
                 >
                   <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50">
                     <Icon size={20} className="text-sky-600" />
@@ -504,7 +503,7 @@ export default async function Home() {
               <Wrench size={14} className="text-sky-600" />
               Services
             </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">What I Can Deliver</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">What I Can Deliver</h2>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -513,7 +512,7 @@ export default async function Home() {
               return (
                 <article
                   key={service.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]"
+                  className="group h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)]"
                 >
                   <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50">
                     <Icon size={20} className="text-sky-600" />
@@ -533,7 +532,7 @@ export default async function Home() {
               <Code2 size={14} className="text-sky-600" />
               Process
             </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">How I Work</h2>
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">How I Work</h2>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -542,7 +541,7 @@ export default async function Home() {
               return (
                 <article
                   key={step.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]"
+                  className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)]"
                 >
                   <div className="mb-4 flex items-center justify-between">
                     <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50">
@@ -567,7 +566,7 @@ export default async function Home() {
               <ShieldCheck size={14} className="text-sky-600" />
               Tooling & Practices
             </div>
-            <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">
+            <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
               Engineering Discipline
             </h2>
           </div>
@@ -578,7 +577,7 @@ export default async function Home() {
               return (
                 <article
                   key={item.title}
-                  className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)]"
+                  className="h-full rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)]"
                 >
                   <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-xl border border-sky-100 bg-sky-50">
                     <Icon size={20} className="text-sky-600" />
@@ -598,7 +597,7 @@ export default async function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                 Featured Work
               </p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
                 Projects with Measurable Impact
               </h2>
             </div>
@@ -611,12 +610,12 @@ export default async function Home() {
                 href={resolveProjectLink(project, githubRepos)}
                 target="_blank"
                 rel="noreferrer"
-                className="group relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2"
+                className="group relative flex h-full overflow-hidden rounded-3xl border border-slate-200 bg-white p-7 shadow-[0_8px_24px_rgba(15,23,42,0.05)] transition hover:-translate-y-1 hover:border-sky-200 hover:shadow-[0_20px_35px_rgba(15,23,42,0.09)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2"
               >
                 <div
                   className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${project.tint} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
                 />
-                <div className="relative">
+                <div className="relative flex h-full flex-col">
                   <div className="mb-5 flex items-center justify-between gap-3">
                     <div className="flex gap-2">
                       {project.stack.slice(0, 2).map((item) => (
@@ -665,7 +664,7 @@ export default async function Home() {
               <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
                 GitHub
               </p>
-              <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-900">
+              <h2 className="mt-3 text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
                 Latest Public Repositories
               </h2>
             </div>
@@ -676,10 +675,9 @@ export default async function Home() {
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2"
-              style={{ color: "#ffffff" }}
             >
-              <Github size={16} style={{ color: "#ffffff" }} />
-              <span style={{ color: "#ffffff" }}>Open Profile</span>
+              <Github size={16} />
+              <span>Open Profile</span>
             </a>
           </div>
 
@@ -731,7 +729,7 @@ export default async function Home() {
               <Wrench size={14} className="text-sky-600" />
               Stack
             </div>
-            <h2 className="mt-3 text-center text-4xl font-black tracking-tight text-slate-900">
+            <h2 className="mt-3 text-center text-3xl font-black tracking-tight text-slate-900 md:text-4xl">
               Tech Stack Breakdown
             </h2>
             <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -762,7 +760,7 @@ export default async function Home() {
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-300">
             Contact
           </p>
-          <h2 className="mt-3 text-4xl font-black tracking-tight">
+          <h2 className="mt-3 text-3xl font-black tracking-tight md:text-4xl">
             Let&apos;s build your next product
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-300">
@@ -777,10 +775,9 @@ export default async function Home() {
             <a
               href="mailto:jhonmar.bernardo@analytica.ph"
               className="inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3 text-sm font-bold text-slate-900 shadow-sm transition hover:bg-slate-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-              style={{ color: "#0f172a", backgroundColor: "#ffffff" }}
             >
-              <Mail size={16} style={{ color: "#0f172a" }} />
-              <span style={{ color: "#0f172a" }}>jhonmar.bernardo@analytica.ph</span>
+              <Mail size={16} />
+              <span>jhonmar.bernardo@analytica.ph</span>
             </a>
             <a
               href="/resume.pdf"
@@ -793,10 +790,9 @@ export default async function Home() {
             <a
               href="mailto:jhonmar.bernardo@analytica.ph?subject=Book%20a%20Call&body=Hi%20Jhonmar%2C%20I%20would%20like%20to%20schedule%20a%20call%20about%20a%20project."
               className="inline-flex items-center gap-2 rounded-xl border border-sky-300 bg-sky-50 px-6 py-3 text-sm font-bold text-sky-800 shadow-sm transition hover:bg-sky-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
-              style={{ color: "#075985", backgroundColor: "#e0f2fe" }}
             >
-              <span style={{ color: "#075985" }}>Schedule a Call</span>
-              <Mail size={16} style={{ color: "#075985" }} />
+              <span>Schedule a Call</span>
+              <Mail size={16} />
             </a>
             <a
               href={githubProfile}

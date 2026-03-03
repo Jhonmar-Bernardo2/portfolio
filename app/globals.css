@@ -24,6 +24,24 @@ body {
   font-family: var(--font-geist-sans), "Segoe UI", sans-serif;
 }
 
+.portfolio-shell {
+  position: relative;
+  isolation: isolate;
+}
+
+.portfolio-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -9;
+  background-image:
+    linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at center, black 35%, transparent 85%);
+}
+
 ::selection {
   background: #0ea5e933;
 }
