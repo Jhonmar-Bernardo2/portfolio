@@ -781,11 +781,11 @@ export default async function Home() {
             </a>
             <a
               href="/resume.pdf"
-              target="_blank"
-              rel="noreferrer"
+              download="Jhonmar-Bernardo-Resume.pdf"
+              aria-label="Download Jhonmar Bernardo Resume PDF"
               className="inline-flex items-center gap-2 rounded-xl bg-sky-500 px-6 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-sky-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-300 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
             >
-              Resume Download <ArrowUpRight size={16} />
+              Download Resume <ArrowUpRight size={16} />
             </a>
             <a
               href="mailto:jhonmar.bernardo@analytica.ph?subject=Book%20a%20Call&body=Hi%20Jhonmar%2C%20I%20would%20like%20to%20schedule%20a%20call%20about%20a%20project."
